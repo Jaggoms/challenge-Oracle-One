@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Montserrat:wght@300&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <img src="./img/logo.svg" alt="Logo de Alura">
+    <h1>Encriptador - Desencriptador de texto</h1>
+  </header>
+  <main>
+    <section class="encriptador" id="encriptador">
+      <textarea cols="20" rows="12" placeholder="Ingrese texto aquí" id="campito" onkeypress="return ((event.charCode >= 97 && event.charCode <= 122) || event.charCode === 32)"></textarea>
+      <p><img src="./img/bi_exclamation-circle-fill.svg" alt="Signo de admiración en un círculo negro">Solo letras minúsculas y sin acentos</p>
+
+      <section class="botones" id="botones">
+        <input type="button" onclick="encriptar()" value="Encriptar">
+        <input type="button" onclick="desEncriptar()" value="Desencriptar">
+      </section>
+    </section>
+
+    <section class="fondo" id="fondo">
+      <img src="./img/Muñeco.png" alt="Muñeco">
+      <p>Ningún mensaje fue encontrado</p>
+      <p>Ingrese el texto que deseas encriptar o desencriptar.</p>
+    </section>
+
+    <section class="encriptado" id="Encriptado">
+      <textarea rows="16" readonly id="Encriptador"></textarea>
+      <input type="button" value="Copiar" onclick="copiarEncriptado()">
+    </section>
+  </main>
+
+  <footer>
+    <div class="final">
+      <span>elaborado por</span> <a href="https://www.linkedin.com/in/misael-carvallo/"><img src="./img/iconmonstr-linkedin-b.svg" class="logo">Jaggoms</a>
+      <p><a href="https://www.linkedin.com/in/misael-carvallo/"><img src="./img/github-mark.svg" class="logo">Jaggoms</a></p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

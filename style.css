@@ -1,0 +1,188 @@
+body {
+    background: white;
+    font-family: 'Roboto', sans-serif;
+    color: #fff8dc;
+  }
+  
+  h1 {
+    font-size: 3em;
+    color: #33332d;
+    display: inline;
+  }
+  
+  main {
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .botones{
+    display: flex;    
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  input {
+    color: #fff8dc;
+    background: blue;
+    padding: 1rem 2rem;
+    border: none;    
+    border-radius: 1rem;
+  }
+
+  input:hover{
+    transition: .5s;
+    background: teal;
+    color: black;
+  }
+  
+  .encriptador {
+    width: 100%;
+    background: gray;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  
+  .encriptador textarea {
+    width: 100%;
+  }
+  
+  .encriptador p {
+    padding: 10px;
+    font-size: 15px;
+    text-align: left;
+  }
+  
+  .encriptador img {
+    height: 15px;
+    vertical-align: middle;
+    padding-right: 10px;
+  }
+  
+  textarea {
+    font-size: 2em;
+    resize: none;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 5px 5px black;
+    border: none;
+  }  
+  
+  .fondo,
+  .encriptado {
+    display: inline-block;
+    background: gray;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: all 0.7s;
+  }
+  
+  .fondo img {
+    width: 200px;
+    margin: 100px auto;
+  }
+  
+  .encriptado textarea {
+    width: 100%;
+
+  }
+  
+  .encriptado textarea::placeholder {
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  .encriptado img {
+    width: 200px;
+    margin: 0 auto;
+  }
+  
+  .final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .logo{
+    width: 25px;
+  }
+
+  footer {
+    padding: 45px;
+    background: lightgray;
+    text-align: center;
+    color: black;
+  }
+
+  /* MEDIA QUERIE PARA TABLET */
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .encriptador textarea{
+    width: 96%;
+  }
+
+  .encriptador,
+  .fondo,
+  .encriptado {
+    padding: 10px;
+  }
+  
+  .fondo img,
+  .encriptado img {
+    width: 150px;
+    margin: 50px auto;
+  }
+
+  .encriptado textarea{
+    width: 96%;
+  }
+  
+  footer {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  h1 {
+    font-size: 2em;
+  }  
+
+  .encriptador,
+  .fondo,
+  .encriptado {
+    padding: 5px;
+  }
+
+  .encriptador textarea{
+    width: 90%;
+  }
+
+  .encriptador p {
+    font-size: 12px;
+  }
+  
+  .fondo img,
+  .encriptado img {
+    width: 120px;
+    margin: 30px auto;
+  }
+
+  .encriptado textarea{
+    width: 85%;
+  }
+  
+  textarea {
+    font-size: 1.5em;
+  }
+  
+  footer {
+    padding: 10px;
+  }
+}
